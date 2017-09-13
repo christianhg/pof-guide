@@ -26,11 +26,7 @@ addThree(2)(4)(6)
 // => 12
 
 const g = addThree(2)
-// => Function
-
 const h = g(4)
-// => Function
-
 h(6)
 // => 12
 ```
