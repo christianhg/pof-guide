@@ -1,5 +1,7 @@
 # Talking FP
 
+> Learn how to talk functional programming and impress your friends.
+
 All code examples are written in JavaScript and have an implicit dependency on [Ramda](http://ramdajs.com/).
 
 - [Currying](#currying)
