@@ -1,6 +1,6 @@
 # Talking FP
 
-All code examples use [Ramda](http://ramdajs.com/), a functional library for JavaScript.
+All code examples are written in JavaScript and have an implicit dependency on [Ramda](http://ramdajs.com/).
 
 - [Currying](#currying)
 - [Partial Application](#partial-application)
