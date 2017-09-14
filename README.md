@@ -33,7 +33,7 @@ h(6)
 
 ## Partial Application
 
-In functional programming you don't call functions with arguments, you *apply* a function to an argument.
+In functional programming you don't call functions with arguments, you *apply* them. `f(x)` is read "apply `f` with `x`".
 
 A curried function can be *partially applied* by applying it to *some* of its expected arguments:
 
