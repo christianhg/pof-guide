@@ -43,7 +43,7 @@ A curried function can be *partially applied* by applying it to *some* of its ex
 const inc = R.add(1)
 ```
 
-This produces what is known as a *partial* function that can be passed around, e.g. to increment a list of numbers:
+This produces a new function that can be passed around, e.g. to increment a list of numbers:
 
 ```js
 [1, 2, 3].map(inc)
@@ -56,5 +56,4 @@ When the `inc` function is applied to its last argument it is known to be *satur
 
 - [Currying](#currying)
 - [Partial application](#partial-application)
-- [Partial function](#partial-application)
 - [Saturated function](#partial-application)
