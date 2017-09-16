@@ -22,7 +22,7 @@ Given the sets `X` and `Y`, a function from `X` to `Y` can be denoted:
 f: X → Y
 ```
 
-An example of such a function could be `length` which takes a `String` and returns a `Number`:
+An example of such a function could be `length` which takes a string and returns a number:
 
 ```js
 // String → Number
