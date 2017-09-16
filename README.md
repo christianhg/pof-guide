@@ -17,13 +17,13 @@ All code examples are written in JavaScript.
 Given the sets `X` and `Y`, a function from `X` to `Y` can be denoted:
 
 ```math
-f: X ⟶ Y
+f: X → Y
 ```
 
 An example of such a function could be `length` which takes a `String` and returns a `Number`:
 
 ```js
-// String ⟶ Number
+// String → Number
 const length = str => str.length
 
 length('foo')
@@ -37,7 +37,7 @@ In this case the set of strings is known as the *domain* of the function and the
 In programming it is highly likely that you'll produce functions that don't return a value for all inputs. Consider this version of `sqrt` which expects all but negative numbers:
 
 ```js
-// Number ⟶ Number
+// Number → Number
 const sqrt = n => n >= 0 ? Math.sqrt(n) : undefined
 
 sqrt(4)
@@ -50,7 +50,7 @@ sqrt(-4)
 In the example of `sqrt`, not all members of the domain map to the codomain which makes it a *partial function*. The sister function, `sqr` doesn't have this limitation and is thus known as a *total function*:
 
 ```js
-// Number ⟶ Number
+// Number → Number
 const sqr = n => n * n
 
 sqr(-2)
@@ -65,14 +65,14 @@ sqr(2)
 Currying is the act of transforming a function that takes multiple arguments into a new function that takes these arguments one at a time or all at once. Consider `addThree` which takes three numbers and produces a new number:
 
 ```js
-// Number ✕ Number ✕ Number ⟶ Number
+// Number ✕ Number ✕ Number → Number
 const addThree = (a, b, c) => a + b + c
 ```
 
 By using the [curry](http://ramdajs.com/docs/#curry) function from the [Ramda](http://ramdajs.com/) library, we can turn it into a *curried function*:
 
 ```js
-// Number ⟶ Number ⟶ Number ⟶ Number
+// Number → Number → Number → Number
 const addThree = R.curry((a, b, c) => a + b + c)
 
 addThree(2, 4, 6)
