@@ -10,6 +10,7 @@ All code examples are written in JavaScript.
 - [Partial Application](#partial-application)
 - [Mathematical Symbols](#mathematical-symbols)
 - [Index](#index)
+- [References](#references)
 
 ---
 
@@ -133,3 +134,9 @@ When the `inc` function is applied to its last argument it is known to be *satur
 - [Ramda](#currying)
 - [Saturated function](#partial-application)
 - [Total functions](#partial-and-total-functions)
+
+## References
+
+- [LambdaCast](https://soundcloud.com/lambda-cast)
+- [List of mathematical symbols](https://en.wikipedia.org/wiki/List_of_mathematical_symbols)
+- Spivak, D.I. (2014) *Category Theory for the Sciences*
