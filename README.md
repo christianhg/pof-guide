@@ -2,12 +2,19 @@
 
 > Learn how to talk functional programming and impress your friends.
 
-All code examples are written in JavaScript.
+This is **Talking FP**: a counterpart to [Functional Programming Jargon][1] that aims to be a little more thorough, structured and mathematical.
 
-- [Domain and Codomain](#domain-and-codomain)
-- [Partial and Total Functions](#partial-and-total-functions)
-- [Currying](#currying)
-- [Partial Application](#partial-application)
+All code examples are written in JavaScript: a highly popular language that, to a large extend, is well equipped to be written in a functional programming style. More experienced functional programmers will perhaps recognise that JavaScript can [prove painful in the long run][2], but hopefully those will also recognise that it offers a very good starting point.
+
+## Contents
+
+So far the sections are ordered by their level of difficulty, but that ordering might prove unmanageable in the long run. Bear in mind that this is a work in progress.
+
+1. [Domain and Codomain](#domain-and-codomain)
+2. [Partial and Total Functions](#partial-and-total-functions)
+3. [Currying](#currying)
+4. [Partial Application](#partial-application)
+
 - [Mathematical Symbols](#mathematical-symbols)
 - [Index](#index)
 - [References](#references)
@@ -71,7 +78,7 @@ Currying is the act of transforming a function that takes multiple arguments int
 const addThree = (a, b, c) => a + b + c
 ```
 
-By using the [curry](http://ramdajs.com/docs/#curry) function from the [Ramda](http://ramdajs.com/) library, we can turn it into a *curried function*:
+By using the [curry][3] function from the [Ramda][4] library, we can turn it into a *curried function*:
 
 ```js
 // Number → Number → Number → Number
@@ -140,3 +147,8 @@ When the `inc` function is applied to its last argument it is known to be *satur
 - [LambdaCast](https://soundcloud.com/lambda-cast)
 - [List of mathematical symbols](https://en.wikipedia.org/wiki/List_of_mathematical_symbols)
 - Spivak, D.I. (2014) *Category Theory for the Sciences*
+
+[1]: https://github.com/hemanth/functional-programming-jargon "Functional Programming Jargon"
+[2]: https://hackernoon.com/functional-programming-in-javascript-is-an-antipattern-58526819f21e "Functional programming in Javascript is an antipattern"
+[3]: http://ramdajs.com/docs/#curry "Curry in Ramda"
+[4]: http://ramdajs.com/ "Ramda"
