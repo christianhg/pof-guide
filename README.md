@@ -2,7 +2,7 @@
 
 > Learn how to talk functional programming and impress your friends.
 
-All code examples are written in JavaScript and have an implicit dependency on [Ramda](http://ramdajs.com/).
+All code examples are written in JavaScript.
 
 - [Domain and Codomain](#domain-and-codomain)
 - [Partial and Total Functions](#partial-and-total-functions)
@@ -62,9 +62,17 @@ sqr(2)
 
 ## Currying
 
-Currying is the act of transforming a function that takes multiple arguments into a new function that takes any number of these arguments to produce a new function:
+Currying is the act of transforming a function that takes multiple arguments into a new function that takes these arguments one at a time or all at once. Consider `addThree` which takes three numbers and produces a new number:
 
 ```js
+// Number ✕ Number ✕ Number ⟶ Number
+const addThree = (a, b, c) => a + b + c
+```
+
+By using the [curry](http://ramdajs.com/docs/#curry) function from the [Ramda](http://ramdajs.com/) library, we can turn it into a *curried function*:
+
+```js
+// Number ⟶ Number ⟶ Number ⟶ Number
 const addThree = R.curry((a, b, c) => a + b + c)
 
 addThree(2, 4, 6)
@@ -108,10 +116,12 @@ When the `inc` function is applied to its last argument it is known to be *satur
 
 ## Index
 
+- [Curried function](#currying)
 - [Currying](#currying)
 - [Function domain](#domain-and-codomain)
 - [Function codomain](#domain-and-codomain)
 - [Partial application](#partial-application)
 - [Partial function](#partial-and-total-functions)
+- [Ramda](#currying)
 - [Saturated function](#partial-application)
 - [Total functions](#partial-and-total-functions)
