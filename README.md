@@ -8,6 +8,7 @@ All code examples are written in JavaScript.
 - [Partial and Total Functions](#partial-and-total-functions)
 - [Currying](#currying)
 - [Partial Application](#partial-application)
+- [Mathematical Symbols](#mathematical-symbols)
 - [Index](#index)
 
 ---
@@ -65,7 +66,7 @@ sqr(2)
 Currying is the act of transforming a function that takes multiple arguments into a new function that takes these arguments one at a time or all at once. Consider `addThree` which takes three numbers and produces a new number:
 
 ```js
-// Number ✕ Number ✕ Number → Number
+// Number × Number × Number → Number
 const addThree = (a, b, c) => a + b + c
 ```
 
@@ -113,6 +114,13 @@ This produces a new function that can be passed around, e.g. to increment a list
 When the `inc` function is applied to its last argument it is known to be *saturated*.
 
 ---
+
+## Mathematical Symbols
+
+|Symbol|Name|Explanation|
+|---|---|---|
+|→|Function arrow|Denotes a function that maps between one set to another.|
+|×|Multiplication|Denotes the cross product of two inputs.|
 
 ## Index
 
