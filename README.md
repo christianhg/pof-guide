@@ -11,9 +11,10 @@ All code examples are written in JavaScript: a highly popular language that, to 
 So far the sections are ordered by their level of difficulty, but that ordering might prove unmanageable in the long run. Bear in mind that this is a work in progress.
 
 1. [Domain and Codomain](#domain-and-codomain)
-2. [Partial and Total Functions](#partial-and-total-functions)
-3. [Currying](#currying)
-4. [Partial Application](#partial-application)
+1. [Composition](#composition)
+1. [Partial and Total Functions](#partial-and-total-functions)
+1. [Currying](#currying)
+1. [Partial Application](#partial-application)
 
 - [Mathematical Symbols](#mathematical-symbols)
 - [Index](#index)
@@ -40,6 +41,69 @@ length('foo')
 ```
 
 In this case the set of strings is known as the *domain* of the function and the set of numbers is known as the *codomain* of the function.
+
+## Composition
+
+If you got a function `f: X → Y` and a function `g: Y → Z`, you can *compose* them to create a function `g ∘ f: X → Z`. That means you can apply an argument to the composition a `f` and `g` to take it directly from `X` to `Z`.
+
+Say we got `length` from before that takes a String and transforms it into a Number, and we define a new function, `isEven`, which takes a Number and transforms it into a Boolean:
+
+```js
+// String → Number
+const length = str => str.length
+
+// Number → Boolean
+const isEven = n => n % 2 === 0
+```
+
+The composition of `length` and `isEven`, `isEven ∘ length`, then transforms a String into a Boolean:
+
+```js
+// String → Boolean
+const isEvenString = s => isEven(length(s))
+
+isEvenString('foo')
+// => false
+
+isEvenString('fizz')
+// => true
+```
+
+As you can see, function composition is native in JavaScript. It's just about wrapping functions around functions to pass the result of the inner function as the argument to the outer function. However, if you need to compose more than a couple of functions, the [`compose`][5] function from [Ramda][4] might provide some more readability.
+
+Let's define a new function, `getName`, that plucks the `name` property of an Object:
+
+```js
+// Object → String
+const getName = o => o.name
+```
+
+We can now create the following composition, `isEven ∘ length ∘ getName`, to find out if a person's name is even:
+
+```js
+// Object → Boolean
+const isEvenName = R.compose(isEven, length, getName)
+
+isEvenName({
+  name: 'Aron',
+  age: 25
+})
+// => true
+
+isEvenName({
+  name: 'Bob',
+  age: 42
+})
+// => false
+```
+
+The composition might as well have been written:
+
+```js
+const isEvenName = o => isEven(length(getName(o)))
+```
+
+But using Ramda's `compose` we managed to create the same function in a more concise way.
 
 ## Partial and Total Functions
 
@@ -129,6 +193,7 @@ When the `inc` function is applied to its last argument it is known to be *satur
 |---|---|---|
 |→|Function arrow|Denotes a function that maps between one set to another.|
 |×|Multiplication|Denotes the cross product of two inputs.|
+|∘|Function composition|Denotes the composition of two functions.|
 
 ## Index
 
@@ -136,6 +201,7 @@ When the `inc` function is applied to its last argument it is known to be *satur
 - [Currying](#currying)
 - [Function domain](#domain-and-codomain)
 - [Function codomain](#domain-and-codomain)
+- [Function composition](#composition)
 - [Partial application](#partial-application)
 - [Partial function](#partial-and-total-functions)
 - [Ramda](#currying)
@@ -152,3 +218,4 @@ When the `inc` function is applied to its last argument it is known to be *satur
 [2]: https://hackernoon.com/functional-programming-in-javascript-is-an-antipattern-58526819f21e "Functional programming in Javascript is an antipattern"
 [3]: http://ramdajs.com/docs/#curry "Curry in Ramda"
 [4]: http://ramdajs.com/ "Ramda"
+[5]: http://ramdajs.com/docs/#compose "Compose in Ramda"
