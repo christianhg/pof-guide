@@ -15,6 +15,7 @@ So far the sections are ordered by their level of difficulty, but that ordering 
 1. [Partial and Total Functions](#partial-and-total-functions)
 1. [Currying](#currying)
 1. [Partial Application](#partial-application)
+1. [Immutability](#immutability)
 
 - [Mathematical Symbols](#mathematical-symbols)
 - [Index](#index)
@@ -185,6 +186,14 @@ This produces a new function that can be passed around, e.g. to increment a list
 
 When the `inc` function is applied to its last argument it is known to be *saturated*.
 
+## Immutability
+
+What's cool about version control systems like [Git][6]? They're *immutable*! Every state change made to a project through Git preserves the previous state in history. Why is this cool? For starters it allows a distributed team to work on the same project without messing up each others work. Unless [rebases][7] commonly occur in your team, the immutable Git history means that you can checkout a commit and have absolute certainty that nobody can change that state of the project from under your feet.
+
+The exact same argument can be made from the perspective of code itself. In functional programming values are (preferably) immutable. This means that the name associated with the value, the variable, can't be associated with another value, and that the value itself can't change. This provides certainty and transparency in the same sense that the Git workflow does. As soon as a part of the program obtains a value to work on, it can do that with a guarantee that the value doesn't suddenly change.
+
+Some languages, like [Haskell][8], enforce immutability, while others do no such thing. In the case of JavaScript, immutability can indeed be a very hard thing to strive for.
+
 ---
 
 ## Mathematical Symbols
@@ -202,6 +211,7 @@ When the `inc` function is applied to its last argument it is known to be *satur
 - [Function domain](#domain-and-codomain)
 - [Function codomain](#domain-and-codomain)
 - [Function composition](#composition)
+- [Immutability](#immutability)
 - [Partial application](#partial-application)
 - [Partial function](#partial-and-total-functions)
 - [Ramda](#currying)
@@ -219,3 +229,6 @@ When the `inc` function is applied to its last argument it is known to be *satur
 [3]: http://ramdajs.com/docs/#curry "Curry in Ramda"
 [4]: http://ramdajs.com/ "Ramda"
 [5]: http://ramdajs.com/docs/#compose "Compose in Ramda"
+[6]: https://git-scm.com/ "Git"
+[7]: https://git-scm.com/docs/git-rebase "Git rebase"
+[8]: https://www.haskell.org/ "Haskell"
