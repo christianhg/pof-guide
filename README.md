@@ -82,15 +82,15 @@ We can now create the following composition, `isEven ∘ length ∘ getName`, to
 
 ```js
 // Object → Boolean
-const isEvenName = R.compose(isEven, length, getName)
+const hasEvenName = R.compose(isEven, length, getName)
 
-isEvenName({
+hasEvenName({
   name: 'Aron',
   age: 25
 })
 // => true
 
-isEvenName({
+hasEvenName({
   name: 'Bob',
   age: 42
 })
@@ -100,7 +100,7 @@ isEvenName({
 The composition might as well have been written:
 
 ```js
-const isEvenName = o => isEven(length(getName(o)))
+const hasEvenName = o => isEven(length(getName(o)))
 ```
 
 But using Ramda's `compose` we managed to create the same function in a more concise way.
