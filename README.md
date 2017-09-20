@@ -45,6 +45,8 @@ In this case the set of strings is known as the *domain* of the function and the
 
 ## Composition
 
+![Composition](illustrations/composition.svg)
+
 If you got a function `f: X → Y` and a function `g: Y → Z`, you can *compose* them to create a function `g ∘ f: X → Z`. That means you can apply an argument to the composition a `f` and `g` to take it directly from `X` to `Z`.
 
 Say we got `length` from before that takes a String and transforms it into a Number, and we define a new function, `isEven`, which takes a Number and transforms it into a Boolean:
@@ -187,6 +189,8 @@ This produces a new function that can be passed around, e.g. to increment a list
 When the `inc` function is applied to its last argument it is known to be *saturated*.
 
 ## Immutability
+
+![Immutability](illustrations/immutability.svg)
 
 What's cool about version control systems like [Git][6]? They're *immutable*! Every state change made to a project through Git preserves the previous state in history. Why is this cool? For starters it allows a distributed team to work on the same project without messing up each others work. Unless [rebases][7] commonly occur in your team, the immutable Git history means that you can checkout a commit and have absolute certainty that nobody can change that state of the project from under your feet.
 

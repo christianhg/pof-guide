@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "svgo": "svgo --pretty --enable removeDimensions -f illustrations"
+  },
+  "devDependencies": {
+    "svgo": "^0.7.2"
+  }
+}
