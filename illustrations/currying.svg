@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 200">
+    <path fill="#46DECA" d="M200 50v18.75l12.5 12.5-12.5 12.5v12.5l12.5 12.5-12.5 12.5V150h99.906v-37.5l12.5-12.5-12.5-12.5V50z"/>
+    <defs>
+        <path id="a" d="M200 50v18.75l12.5 12.5-12.5 12.5v12.5l12.5 12.5-12.5 12.5V150h99.906v-37.5l12.5-12.5-12.5-12.5V50z"/>
+    </defs>
+    <clipPath id="b">
+        <use xlink:href="#a" overflow="visible"/>
+    </clipPath>
+    <path opacity=".1" clip-path="url(#b)" fill="#FFF" d="M200 150L300 50H200z"/>
+    <path fill="#29D9D2" d="M375.031 50v37.5l12.5 12.5-12.5 12.5V150h50v-37.5l12.5-12.5-12.5-12.5V50z"/>
+    <path fill="#22BEAA" d="M425 50v37.5l12.5 12.5-12.5 12.5V150h49.75v-37.5l12.5-12.5-12.5-12.5V50z"/>
+    <defs>
+        <path id="c" d="M474.75 87.5V50h-99.719v37.5l12.5 12.5-12.5 12.5V150h99.719v-37.5l12.5-12.5z"/>
+    </defs>
+    <clipPath id="d">
+        <use xlink:href="#c" overflow="visible"/>
+    </clipPath>
+    <path opacity=".1" clip-path="url(#d)" fill="#FFF" d="M375 150L475 50H375z"/>
+</svg>

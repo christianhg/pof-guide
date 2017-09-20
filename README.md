@@ -138,6 +138,8 @@ sqr(2)
 
 ## Currying
 
+![Currying](illustrations/currying.svg)
+
 Currying is the act of transforming a function that takes multiple arguments into a new function that takes these arguments one at a time or all at once. Consider `addThree` which takes three numbers and produces a new number:
 
 ```js
