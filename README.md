@@ -1,8 +1,6 @@
-# Talking FP
+![p.f](illustrations/logo.svg)
 
-> Learn how to talk functional programming and impress your friends.
-
-This is **Talking FP**: a counterpart to [Functional Programming Jargon][1] that aims to be a little more thorough, structured and mathematical.
+> A thorough and mathematical guide through functional programming concepts.
 
 All code examples are written in JavaScript: a highly popular language that, to a large extend, is well equipped to be written in a functional programming style. More experienced functional programmers will perhaps recognise that JavaScript can [prove painful in the long run][2], but hopefully those will also recognise that it offers a very good starting point.
 
