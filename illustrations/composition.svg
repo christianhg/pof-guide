@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 175">
     <path fill="#79BD8F" d="M175 50v25h12v25h-12v25h-75v-25l12.5-12.5L100 75V50z"/>
     <defs>
-        <path id="a" d="M175 50v25h12v25h-12v25h-75v-25l12.5-12.5L100 75V50z"/>
+        <path id="a" d="M175 50v75h-75v-25l12.5-12.5L100 75V50z"/>
     </defs>
     <clipPath id="b">
         <use xlink:href="#a" overflow="visible"/>
     </clipPath>
-    <path opacity=".1" clip-path="url(#b)" fill="#FFF" d="M100 125l100-75H100z"/>
+    <path opacity=".1" clip-path="url(#b)" fill="#FFF" d="M100 125l75-75h-75z"/>
     <path fill="#BEEB9F" d="M300 50v25s12.5 0 12.5 12.5S300 100 300 100v25h-75v-25h12V75h-12V50h75z"/>
     <defs>
-        <path id="c" d="M300 50v25s12.5 0 12.5 12.5S300 100 300 100v25h-75v-25h12V75h-12V50h75z"/>
+        <path id="c" d="M300 50v75h-75v-25h12V75h-12V50z"/>
     </defs>
     <clipPath id="d">
         <use xlink:href="#c" overflow="visible"/>
     </clipPath>
-    <path opacity=".1" clip-path="url(#d)" fill="#FFF" d="M225 125l100-75H225z"/>
+    <path opacity=".1" clip-path="url(#d)" fill="#FFF" d="M225 125l75-75h-75z"/>
     <path fill="#79BD8F" d="M525 50v25h12v25h-12v25h-75v-25l12.5-12.5L450 75V50z"/>
     <path fill="#BEEB9F" d="M600 50v25s12.5 0 12.5 12.5S600 100 600 100v25h-75v-25h12V75h-12V50h75z"/>
     <defs>
-        <path id="e" d="M600 75V50H450v25l12.5 12.5L450 100v25h150v-25s12.5 0 12.5-12.5S600 75 600 75z"/>
+        <path id="e" d="M600 50H450v25l12.5 12.5L450 100v25h150z"/>
     </defs>
     <clipPath id="f">
         <use xlink:href="#e" overflow="visible"/>
     </clipPath>
-    <path opacity=".1" clip-path="url(#f)" fill="#FFF" d="M450 125l175-75H450z"/>
+    <path opacity=".1" clip-path="url(#f)" fill="#FFF" d="M450 125l150-75H450z"/>
 </svg>
