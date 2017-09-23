@@ -1,19 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 200">
-    <path fill="#46DECA" d="M200 50v18.75l12.5 12.5-12.5 12.5v12.5l12.5 12.5-12.5 12.5V150h99.906v-37.5l12.5-12.5-12.5-12.5V50z"/>
+    <path fill="#212121" d="M221.609 96.609h-2.879L221.123 99H187.5c-18.336 0-27.301-8.965-36.793-18.457C141.345 71.181 131.664 61.5 112.5 61.5H75v2h37.5c18.336 0 27.301 8.965 36.793 18.457 6.792 6.793 13.772 13.734 24.401 17.043H75v2h98.694c-10.629 3.309-17.609 10.25-24.401 17.043-9.492 9.492-18.457 18.457-36.793 18.457H75v2h37.5c19.164 0 28.845-9.681 38.207-19.043C160.199 109.965 169.164 101 187.5 101h33.623l-2.392 2.391h2.879L225 100l-3.391-3.391z"/>
+    <path fill="#46DECA" d="M39.175 71.875L50 53.125l10.825 18.75z"/>
     <defs>
-        <path id="a" d="M200 50v18.75l12.5 12.5-12.5 12.5v12.5l12.5 12.5-12.5 12.5V150h99.906v-37.5l12.5-12.5-12.5-12.5V50z"/>
+        <path id="a" d="M39.175 71.875L50 53.125l10.825 18.75z"/>
     </defs>
     <clipPath id="b">
         <use xlink:href="#a" overflow="visible"/>
     </clipPath>
-    <path opacity=".1" clip-path="url(#b)" fill="#FFF" d="M200 150L300 50H200z"/>
-    <path fill="#29D9D2" d="M375.031 50v37.5l12.5 12.5-12.5 12.5V150h50v-37.5l12.5-12.5-12.5-12.5V50z"/>
-    <path fill="#22BEAA" d="M425 50v37.5l12.5 12.5-12.5 12.5V150h49.75v-37.5l12.5-12.5-12.5-12.5V50z"/>
+    <path opacity=".1" clip-path="url(#b)" fill="#FFF" d="M39.125 71.854l21.676-18.729H39.125z"/>
+    <path fill="#46DECA" d="M339.675 109.375l10.825-18.75 10.825 18.75z"/>
     <defs>
-        <path id="c" d="M474.75 87.5V50h-99.719v37.5l12.5 12.5-12.5 12.5V150h99.719v-37.5l12.5-12.5z"/>
+        <path id="c" d="M339.675 109.375l10.825-18.75 10.825 18.75z"/>
     </defs>
     <clipPath id="d">
         <use xlink:href="#c" overflow="visible"/>
     </clipPath>
-    <path opacity=".1" clip-path="url(#d)" fill="#FFF" d="M375 150L475 50H375z"/>
+    <path opacity=".1" clip-path="url(#d)" fill="#FFF" d="M339.625 109.354l21.676-18.729h-21.676z"/>
+    <path fill="#29D9D2" d="M40.625 90.625h18.75v18.75h-18.75z"/>
+    <path opacity=".1" fill="#FFF" d="M40.625 109.375l18.75-18.75h-18.75z"/>
+    <path fill="#29D9D2" d="M440.625 90.625h18.75v18.75h-18.75z"/>
+    <path opacity=".1" fill="#FFF" d="M440.625 109.375l18.75-18.75h-18.75z"/>
+    <path fill="#22BEAA" d="M59.375 137.875a9 9 0 0 1-9 9h-.75a9 9 0 0 1-9-9v-.75a9 9 0 0 1 9-9h.75a9 9 0 0 1 9 9v.75z"/>
+    <defs>
+        <path id="e" d="M59.375 137.875a9 9 0 0 1-9 9h-.75a9 9 0 0 1-9-9v-.75a9 9 0 0 1 9-9h.75a9 9 0 0 1 9 9v.75z"/>
+    </defs>
+    <clipPath id="f">
+        <use xlink:href="#e" overflow="visible"/>
+    </clipPath>
+    <path opacity=".1" clip-path="url(#f)" fill="#FFF" d="M40.625 146.875l18.75-18.75h-18.75z"/>
+    <path fill="#22BEAA" d="M559.375 100.375a9 9 0 0 1-9 9h-.75a9 9 0 0 1-9-9v-.75a9 9 0 0 1 9-9h.75a9 9 0 0 1 9 9v.75z"/>
+    <defs>
+        <path id="g" d="M559.375 100.375a9 9 0 0 1-9 9h-.75a9 9 0 0 1-9-9v-.75a9 9 0 0 1 9-9h.75a9 9 0 0 1 9 9v.75z"/>
+    </defs>
+    <clipPath id="h">
+        <use xlink:href="#g" overflow="visible"/>
+    </clipPath>
+    <path opacity=".1" clip-path="url(#h)" fill="#FFF" d="M540.625 109.375l18.75-18.75h-18.75z"/>
+    <path fill="#E54661" d="M244.587 109.375L239.175 100l5.412-9.375h10.826l5.412 9.375-5.412 9.375z"/>
+    <defs>
+        <path id="i" d="M244.587 109.375L239.175 100l5.412-9.375h10.826l5.412 9.375-5.412 9.375z"/>
+    </defs>
+    <clipPath id="j">
+        <use xlink:href="#i" overflow="visible"/>
+    </clipPath>
+    <path opacity=".1" clip-path="url(#j)" fill="#FFF" d="M239.162 109.364l21.676-18.728h-21.676z"/>
+    <path fill="#E54661" d="M644.588 109.375L639.175 100l5.413-9.375h10.824l5.413 9.375-5.413 9.375z"/>
+    <defs>
+        <path id="k" d="M644.588 109.375L639.175 100l5.413-9.375h10.824l5.413 9.375-5.413 9.375z"/>
+    </defs>
+    <clipPath id="l">
+        <use xlink:href="#k" overflow="visible"/>
+    </clipPath>
+    <path opacity=".1" clip-path="url(#l)" fill="#FFF" d="M639.162 109.364l21.676-18.728h-21.676z"/>
+    <path fill="#212121" d="M621.609 96.609h-2.879L621.122 99H575v2h46.122l-2.392 2.391h2.879L625 100zm-100 0h-2.879L521.122 99H475v2h46.122l-2.392 2.391h2.879L525 100zm-100 0h-2.879L421.122 99H375v2h46.122l-2.392 2.391h2.879L425 100z"/>
 </svg>
