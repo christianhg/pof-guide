@@ -1,12 +1,14 @@
 ![p.f](illustrations/logo.svg)
 
-> A thorough and mathematical guide through functional programming concepts.
+```
+p ∘ f: A thorough and mathematical guide through functional programming concepts.
+```
 
 All code examples are written in JavaScript: a highly popular language that, to a large extend, is well equipped to be written in a functional programming style. More experienced functional programmers will perhaps recognise that JavaScript can [prove painful in the long run][2], but hopefully those will also recognise that it offers a very good starting point.
 
-## Contents
+Bear in mind that this is a work in progress.
 
-So far the sections are ordered by their level of difficulty, but that ordering might prove unmanageable in the long run. Bear in mind that this is a work in progress.
+## Contents
 
 1. [Domain and Codomain](#domain-and-codomain)
 1. [Composition](#composition)
